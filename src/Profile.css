@@ -1,0 +1,92 @@
+.body {
+  font-family: -apple-system, 'SF Pro', 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'SF Pro Display', -apple-system, 'Helvetica Neue', Arial, sans-serif;
+}
+
+p {
+  font-family: 'SF Pro Text', -apple-system, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.profile-container {
+  background-color: #f4f4f4;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.profile-card:hover {
+  background-color: burlywood;
+}
+
+.profile-card {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 60px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* width: 300px; */
+}
+
+.profile-content {
+  display: grid;
+  grid-template-columns: auto 1fr; 
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.profile-buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.profile-buttons button {
+  font-family: 'SF Pro Text', -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn1 {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn2 {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn1:hover {
+  background-color: #0056b3;
+}
+
+.btn2:hover {
+  background-color: #218838;
+}
+
+@media (min-width: 640px) {
+  .profile-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .profile-container {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
